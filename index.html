@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Nunito:wght@300&family=Parisienne&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script defer src="index.js"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="div-header" class="header">
+        <h1 id="h1-header" class="mainPageTitle">Five O'Clocktail Time!</h1>
+    </div>
+
+    <div id="div-dropdown" class="dropdown">
+            <div class="divSelect">
+                <select id="selectAlcohol">
+                    <option value="selection" selected disabled hidden>Choose Your Poison!</option>
+                    <option value="gin" id="gin">Gin</option>
+                    <option value="vodka" id="vodka">Vodka</option>
+                    <option value="tequila" id="tequila">Tequila</option>
+                    <option value="Rum" id="Rum">Rum</option>
+                  </select>
+                  <div class="select_arrow">
+                </div>
+            </div>
+    </div>
+
+    <div class="container-main">
+        <img id="mainPhoto" width="300" height="" src="https://imbibemagazine.com/wp-content/uploads/2019/01/listen-bar-she-pretty-cocktail-crdt-.jpg"/>
+        <div class="container-picture">
+            <div id="drinkCard" class="display">
+                <img id="drinkPic" src="">
+            </div>
+        </div>
+    
+        <div class="container-info">
+            <div id="infoDiv" class="info">
+                <h2 id="drinkNameHeader" class="header"> </h2>
+                <h3 id="drinkName" class="contentName"></h3>
+                <h2 id="ingredientsHeader" class="header"></h2>
+                <h3 id="ingredientsList" class="header"></h3>
+                <ul id="ul">
+                </ul>
+                <h2 id="directions" class="header"></h2>
+                <p id="directionsParagraph" class="contentDirections"></p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div id="button-div">
+        <button id="nextDrinkButton"> Nah, Give Me A Different Drink</button>
+    </div>
+    
+</body>
+</html>

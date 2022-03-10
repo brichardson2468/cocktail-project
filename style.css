@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    background-image: url('https://i.pinimg.com/originals/2d/ef/16/2def16c83856275a6864f57c4563a76b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center top;
+}
+
+/* HEADER - TITLE */
+
+.mainPageTitle {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+    text-align: center;
+    color: #fdfdfd;
+    padding-top: 75px;
+    letter-spacing: 0.1em;
+    font-weight: 20;
+    opacity: 0.8;
+}
+
+/* HEADER = PHOTO */
+#mainPhoto {
+  position: fixed;
+  z-index: 1;
+  top: 34%;
+  left: 43%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* DROPDOWN AREA */
+
+.divSelect {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+
+#selectAlcohol {
+    font-family: 'Nunito', sans-serif;  
+    size: 100%;
+    display: inline-block;
+    width: 40%;
+    cursor: pointer;
+    padding: 16px 24px;
+    outline: 0;
+    border: 0px solid #340606;
+    border-radius: 0px;
+    background: #340606;
+    color: #fdfdfd;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    opacity: 0.7;
+    font-weight:bold;
+    
+}
+
+#selectAlcohol::-ms-expand {
+    display: none;
+}
+
+#selectAlcohol:hover,
+#selectAlcohol:focus {
+    color: #fdfdfd;
+    background: #340606;
+    
+}
+
+#selectAlcohol:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.select_arrow {
+    position:relative;
+    top: 5px;
+    right: 35px;
+    width: 14px;
+    height: 14px;
+    border: solid #7b7b7b;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#selectAlcohol:hover ~ .select_arrow,
+#selectAlcohol:focus ~ .select_arrow {
+    border-color: ;
+}
+
+#selectAlcohol:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+
+/* COCKTAIL DIV AREA */
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    background-color: #340606;
+    height: 500px;
+    opacity: 0.7;
+}
+
+
+
+/* DRINK PHOTO SECTION - LEFT SIDE */
+.container-picture {
+    display: flex;
+    width: 50%;
+
+}
+
+#drinkCard {
+    display:flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#drinkPic {
+    width: 60%;
+}
+
+/* RIGHT SIDE */
+
+.container-info {
+    display: flex;
+    width: 50%;
+    height: 500px;
+    color: white;
+
+}
+
+#infoDiv {
+    padding-top: 3%;
+    height: 500px;
+}
+
+.header {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+
+.contentName {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6em;
+}
+
+.contentDirections {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+}
+
+li {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 1em;
+}
+
+/* BUTTON */
+#nextDrinkButton {
+    background-color: #340606;
+    opacity: 0.8;
+    font-size: 18px;
+    padding: 1.5%;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 30%;
+    border: none;
+}
+
+#nextDrinkButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.30);
+}
+
+#button-div {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
