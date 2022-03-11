@@ -13,16 +13,8 @@ const ingredientsHeader = document.querySelector('#ingredientsHeader')
 const imgDiv = document.querySelector(".container-main")
 const mainPic = document.querySelector("#mainPhoto")
 
-// document.addEventListener('DOMContentLoaded', () =>{
-//     const imageLoad = document.createElement("img")
-//     imageLoad.src = "https://imbibemagazine.com/wp-content/uploads/2019/01/listen-bar-she-pretty-cocktail-crdt-.jpg"
-//     imgDiv.append(imageLoad)
-// })
-
-
 chosenAlcohol.addEventListener('change', () =>{
     const chosenAlcohol = document.querySelector("#selectAlcohol").value;
-    //console.log(chosenAlcohol)
     alcoholData(chosenAlcohol)
     ul.innerText = ''
     mainPic.remove()
@@ -31,17 +23,15 @@ chosenAlcohol.addEventListener('change', () =>{
 
 function alcoholData(chosenAlcohol){
 fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${chosenAlcohol}`)
-.then((res) => res.json())
+.then(res => res.json())
 .then((alcoholData) => {
     const randomAlcohol = alcoholData.drinks[Math.floor(Math.random()* alcoholData.drinks.length)]
-    console.log(randomAlcohol)
 
     drinkImg.src = randomAlcohol.strDrinkThumb
     drinkNameHeader.innerText = "COCKTAIL NAME" 
     drinkName.innerText = `${randomAlcohol.strDrink}` 
 
     const alcoholID = randomAlcohol.idDrink
-    console.log(alcoholID)
     otherAlcoholInfo(alcoholID)
 })
 }
@@ -52,7 +42,6 @@ function otherAlcoholInfo(alcoholID) {
     .then((moreAlcoholInfo) => {
         directions.innerText = "DIRECTIONS"
         directionsParagraph.innerText = `${moreAlcoholInfo.drinks[0].strInstructions}`
-        console.log(moreAlcoholInfo)
         generateIngredients(moreAlcoholInfo)
     })
 }
@@ -67,7 +56,6 @@ function generateIngredients(moreAlcoholInfo) {
  
 
         if (interpolatedIngredient !== null && interpolatedMeasurement !==null && interpolatedIngredient !== "" && interpolatedMeasurement !== "") {
-            //console.log(interpolatedMeasurement + " " + interpolatedIngredient)
             const li = document.createElement('li')
             li.innerText = interpolatedMeasurement + " " + interpolatedIngredient
             ul.append(li)

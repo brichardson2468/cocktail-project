@@ -102,7 +102,7 @@ body {
 
 #selectAlcohol:hover ~ .select_arrow,
 #selectAlcohol:focus ~ .select_arrow {
-    border-color: ;
+    border-color: black;
 }
 
 #selectAlcohol:disabled ~ .select_arrow {
