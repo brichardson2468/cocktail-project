@@ -29,8 +29,8 @@ body {
 #mainPhoto {
   position: fixed;
   z-index: 1;
-  top: 34%;
-  left: 43%;
+  top: 35%;
+  left: 4%;
 }
 
 .hidden {
